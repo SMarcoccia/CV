@@ -1,0 +1,140 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  margin: 0em;
+
+}
+
+/* --------Côté gauche---------------- */
+
+body > #backgroundLeft{
+  flex-direction: row; 
+  width: 33%;
+  background-color: rgb(21, 161, 197);
+  color: white;  
+}
+
+hr{
+  margin: 0em;
+}
+
+h2{
+  margin-bottom: 0em;
+}
+#articleLeft{
+  margin-left: 1.5em;
+}
+
+#articleLeft hr{
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border: none; /*Suppression du tyle par défaut.*/
+}
+
+#articleLeft ul{
+  padding-left: 1em;
+}
+
+#articleLeft figure{
+  margin-left: 0em;
+  width : 0%;
+}
+
+#backgroundLeft h1{
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0.0em;
+  margin-bottom: 1.0em;
+}
+
+#imgId{
+  margin: 0em;
+}
+
+#imgId img{
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  margin-top: 1.75em;
+  margin-left: 4.875em;
+}
+
+#articleLeft_2 li{
+  display: flex;
+  align-items: center;
+}
+
+#articleLeft_2 ul{
+  padding: 0em;
+}
+
+#articleLeft_2 div figure{
+  width: 0em;
+}
+
+#articleLeft_2 > #div_2{
+  flex-direction: column;
+}
+
+#articleLeft_2 #div_2 p{
+  margin: 0em;
+}
+
+
+
+
+
+
+/* --------Côté droit---------------- */
+
+#backgroundRight{
+  width: 67%;
+  height: 100%;
+}
+
+#backgroundRight h1{
+  text-align: center;
+  margin-bottom: 6.5em;
+}
+
+#backgroundRight h2{
+  margin-top: 3em;
+}
+
+#backgroundRight h3{
+  color: rgb(21, 161, 197);
+  margin-bottom: 1em;
+}
+
+#backgroundRight ul{
+  margin-top: 1em;
+}
+
+#backgroundRight li{
+  margin: 1em;
+}
+
+#articleRight{
+  margin-left: 1.5em;
+}
+
+#articleRight hr{
+  width: 100%;
+  height: 2px;
+  background-color: rgb(21, 161, 197);
+  border: none; /*Suppression du style par défaut.*/
+}
+
+#articleRigth_2 #ul_21 {
+  margin-top: 0em;
+}
+
+#articleRigth_2 #ul_22 {
+  margin-top: 0em;
+}
+
+#articleRigth_2 #ul_23 {
+  margin-top: 0em;
+}
