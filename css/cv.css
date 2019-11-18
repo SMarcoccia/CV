@@ -1,140 +1,200 @@
+html{
+  height: 100%;
+  font-size: 62.5%; 
+  font-family: 'Courier New', Courier, monospace;
+  /* min-height: 100%; */
+} 
 
 body{
-  display: flex;
-  justify-content: center;
   margin: 0em;
+  display: flex;
+}
 
+
+section{
+  font-size: 1.75rem;
+  background-color: rgb(21, 161, 197);
+  font-family: initial;
+}
+
+article{
+  padding-left: 2.5rem;
+}
+
+h2{
+  margin-bottom: 0%;
+}
+
+hr{
+  width: 100%;
+  height: 2px;
+  border: none;
+  margin: 0%;
 }
 
 /* --------Côté gauche---------------- */
 
-body > #backgroundLeft{
-  flex-direction: row; 
+#sectionLeft{
+  display: flex;
+  flex-direction: column;
   width: 33%;
-  background-color: rgb(21, 161, 197);
   color: white;  
 }
 
-hr{
-  margin: 0em;
-}
-
-h2{
-  margin-bottom: 0em;
-}
-#articleLeft{
-  margin-left: 1.5em;
-}
-
-#articleLeft hr{
-  width: 100%;
-  height: 2px;
+#sectionLeft hr{
   background-color: white;
-  border: none; /*Suppression du tyle par défaut.*/
 }
 
-#articleLeft ul{
-  padding-left: 1em;
-}
-
-#articleLeft figure{
-  margin-left: 0em;
-  width : 0%;
-}
-
-#backgroundLeft h1{
-  text-align: center;
-  font-size: 2em;
-  margin-top: 0.0em;
-  margin-bottom: 1.0em;
-}
-
-#imgId{
-  margin: 0em;
-}
-
-#imgId img{
-  width: 176px;
-  height: 176px;
-  border-radius: 50%;
-  margin-top: 1.75em;
-  margin-left: 4.875em;
-}
-
-#articleLeft_2 li{
+#headerPerso{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  text-align: center; 
 }
 
-#articleLeft_2 ul{
-  padding: 0em;
+#headerPerso > figure{
+  margin: 0rem;
 }
 
-#articleLeft_2 div figure{
-  width: 0em;
+#headerPerso > figure > img{
+  max-width: 16.6rem;
+  border-radius: 50%;
+  margin-top: 2rem;
 }
 
-#articleLeft_2 > #div_2{
+#headerPerso > h2{
+  font-size: 3rem;
+  margin-top: 0rem;
+}
+
+#articleInfo{
+  display: flex;
   flex-direction: column;
 }
 
-#articleLeft_2 #div_2 p{
-  margin: 0em;
+article figure{
+  margin-left: 1rem; /*mettre 4 rem pour être au milieu.*/
+  text-align: center;
 }
 
+#articleContact{
+  display: flex;
+  flex-direction: column;
+}
 
+#imgHouseContact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+#imgHouseContact figure{
+  /* margin-left: auto; */
+}
 
+#imgHouseContact p{
+  margin: 0%;
+}
 
+#imgHouseContact img{
+  margin-top: 0.5rem;
+}
+
+#imgPhoneContact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#imgPhoneContact img{
+  margin-top: 0.5rem;
+}
+
+#txtPhoneContact p{
+  margin: 0%;
+}
+
+#imgEnvelopeContact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#imgLinkLinkedinContact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#imgLinkGithubContact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#articleInteret{
+  display: flex;
+  flex-direction: column;
+}
 
 /* --------Côté droit---------------- */
 
-#backgroundRight{
+#sectionRight{
   width: 67%;
   height: 100%;
+  background-color: white;
 }
 
-#backgroundRight h1{
+#sectionRight > header {
   text-align: center;
-  margin-bottom: 6.5em;
+  height: 20rem;
 }
 
-#backgroundRight h2{
-  margin-top: 3em;
-}
-
-#backgroundRight h3{
+#sectionRight h3{
   color: rgb(21, 161, 197);
-  margin-bottom: 1em;
 }
 
-#backgroundRight ul{
-  margin-top: 1em;
-}
-
-#backgroundRight li{
-  margin: 1em;
-}
-
-#articleRight{
-  margin-left: 1.5em;
-}
-
-#articleRight hr{
-  width: 100%;
-  height: 2px;
+#sectionRight hr{
   background-color: rgb(21, 161, 197);
-  border: none; /*Suppression du style par défaut.*/
 }
 
-#articleRigth_2 #ul_21 {
-  margin-top: 0em;
+/* --------Côté gauche---------------- */
+
+@media(max-width: 47.9rem){
+  body{
+    flex-direction: column;
+  }
+  
+  #sectionLeft{
+    width: 100%;
+  }
+
+  #sectionRight{
+    width: 100%;
+  }
+
+  #articleInfo ul{
+    /* text-align: center; */
+    position: relative;
+    left: -2rem;
+  } 
+
+  #articleContact  div[id^=img]{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: -5rem;
+  } 
+
+ article figure{
+    margin: 2rem auto 0 auto;
+  }
+
+  #articleInteret ul{
+    position: relative;
+    left: -2rem;
+  }
+
+
 }
 
-#articleRigth_2 #ul_22 {
-  margin-top: 0em;
-}
-
-#articleRigth_2 #ul_23 {
-  margin-top: 0em;
-}
+  
